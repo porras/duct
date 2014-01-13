@@ -1,4 +1,4 @@
-# Duct
+# Duct [![Build Status](https://travis-ci.org/porras/duct.png?branch=master)](https://travis-ci.org/porras/duct)
 
 ![Duct Tape, By Evan-Amos, via Wikimedia Commons](http://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Duct-tape.jpg/256px-Duct-tape.jpg)
 
