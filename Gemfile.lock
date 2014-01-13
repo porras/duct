@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    duct (0.0.0)
+    duct (0.1.0)
       bundler
 
 GEM
