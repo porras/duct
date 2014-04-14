@@ -74,7 +74,7 @@ Remember that updating the bundle will update the `Gemfile.lock` section in your
 
 ### Using Duct in shebangs
 
-Under Unix-like operating systems, you can instruct the program loader to use Duct to run your script. Just put the following [shebang](http://en.wikipedia.org/wiki/Shebang_(Unix)) in the first line of your script:
+Under Unix-like operating systems, you can instruct the program loader to use Duct to run your script. Just put the following [shebang](http://en.wikipedia.org/wiki/Shebang_(Unix)) in the first line of your script (the `# ruby` comment is needed because of something explained [here](http://devoh.com/blog/2012/11/local-environment-variables)):
 
 ```ruby
 #!/usr/bin/env duct # ruby
