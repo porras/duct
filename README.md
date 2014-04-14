@@ -70,6 +70,8 @@ filename:
 $ duct update sinatra my_script.rb
 ```
 
+Remember that updating the bundle will update the `Gemfile.lock` section in your script, so remember to save those changes.
+
 ### Using Duct in shebangs
 
 Under Unix-like operating systems, you can instruct the program loader to use Duct to run your script. Just put the following [shebang](http://en.wikipedia.org/wiki/Shebang_(Unix)) in the first line of your script:
