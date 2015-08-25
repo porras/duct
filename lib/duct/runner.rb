@@ -13,7 +13,11 @@ module Duct
       copy_embedded_files
       system "BUNDLE_GEMFILE=#{tempdir}/Gemfile bundle #{@config.command}"
       update_embedded_files
-      exec "BUNDLE_GEMFILE=#{tempdir}/Gemfile bundle exec ruby #{@config.filename} #{@config.params.join(' ')}; rm -rf #{tempdir}" unless @config.command
+      exec script_command unless @config.command
+    end
+
+    def script_command
+      "BUNDLE_GEMFILE=#{tempdir}/Gemfile bundle exec ruby #{@config.filename} #{@config.params.join(' ')}; rm -rf #{tempdir}"
     end
 
     private
