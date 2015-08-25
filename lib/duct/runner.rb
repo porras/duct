@@ -1,5 +1,6 @@
 require 'tmpdir'
 require 'stringio'
+require 'shellwords'
 
 module Duct
   class Runner
@@ -31,7 +32,9 @@ module Duct
     end
 
     def script_command
-      "BUNDLE_GEMFILE=#{tempdir}/Gemfile bundle exec ruby #{@config.filename} #{@config.params.join(' ')}; rm -rf #{tempdir}"
+      filename = @config.filename.shellescape
+      params = @config.params.join(' ')
+      "BUNDLE_GEMFILE=#{tempdir}/Gemfile bundle exec ruby #{filename} #{params}; rm -rf #{tempdir}"
     end
 
     private

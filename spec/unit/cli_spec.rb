@@ -29,7 +29,7 @@ describe Duct::Cli do
     its(:command)  { should be_nil }
     its(:params)   { should == ['param1', 'param2'] }
     its(:error?)   { should be_false }
-    its('runner.script_command') { should match(%r{.+ruby 'myscript.rb' param1 param2.+}) }
+    its('runner.script_command') { should match(%r{.+ruby myscript.rb param1 param2.+}) }
   end
 
   context 'filename with space and params' do
@@ -39,7 +39,7 @@ describe Duct::Cli do
     its(:command)  { should be_nil }
     its(:params)   { should == ['param1', 'param2'] }
     its(:error?)   { should be_false }
-    its('runner.script_command') { should match(%r{.+ruby 'myscript space.rb' param1 param2.+}) }
+    its('runner.script_command') { should match(%r{.+ruby myscript\\ space.rb param1 param2.+}) }
   end
 
   context 'command and filename' do
