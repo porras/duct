@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/). Based on the format proposed by [Keep a Changelog](http://keepachangelog.com/).
 
-## [Unreleased]
+## [0.1.1] [2015-10-04]
 
 ### Added
 

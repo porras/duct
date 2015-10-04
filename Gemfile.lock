@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    duct (0.1.0)
+    duct (0.1.1)
       bundler
 
 GEM
@@ -23,8 +23,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.3)
   duct!
   rake
   rspec
   rubysl-singleton
+
+BUNDLED WITH
+   1.10.6
